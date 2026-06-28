@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Austin Foundation Repair | Free Inspection & Same-Week Estimates | Austin Foundation Co</title>
+<meta name="description" content="Cracks in your walls? Sticking doors? Sloping floors? Get a free foundation inspection from Austin's foundation repair specialists. Licensed, insured, same-week estimates.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --limestone:#EFE9DE;
+    --limestone-dark:#E2D9C8;
+    --slate:#2B2E33;
+    --slate-soft:#454A52;
+    --clay:#B5512B;
+    --clay-deep:#8C3D1F;
+    --line:#C9BFA9;
+    --white:#FCFBF8;
+    --good:#3C6E47;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Inter',sans-serif;
+    background:var(--white);
+    color:var(--slate);
+    line-height:1.5;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3{
+    font-family:'Fraunces',serif;
+    font-weight:560;
+    letter-spacing:-0.01em;
+    color:var(--slate);
+  }
+  .mono{font-family:'JetBrains Mono',monospace;}
+  a{color:inherit;text-decoration:none;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 24px;}
+  .visually-hidden{position:absolute;left:-9999px;}
+
+  /* ---------- TOP BAR ---------- */
+  .topbar{
+    background:var(--slate);
+    color:var(--limestone);
+    font-size:14px;
+    padding:9px 0;
+  }
+  .topbar .wrap{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px;}
+  .topbar a.phone{font-weight:600;color:#fff;}
+  .topbar .hours{opacity:.75;font-size:13px;}
+
+  /* ---------- HEADER ---------- */
+  header{
+    background:var(--white);
+    border-bottom:1px solid var(--line);
+    position:sticky;
+    top:0;
+    z-index:50;
+  }
+  .header-inner{
+    display:flex;align-items:center;justify-content:space-between;
+    padding:16px 24px;
+  }
+  .logo{
+    font-family:'Fraunces',serif;
+    font-size:21px;
+    font-weight:600;
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .logo .mark{
+    width:30px;height:30px;flex:none;
+  }
+  nav{display:flex;gap:28px;font-size:15px;font-weight:500;}
+  nav a:hover{color:var(--clay);}
+  .nav-cta{
+    background:var(--clay);
+    color:#fff;
+    padding:11px 20px;
+    border-radius:3px;
+    font-weight:600;
+    font-size:14.5px;
+    white-space:nowrap;
+  }
+  .nav-cta:hover{background:var(--clay-deep);}
+  .nav-links-mobile{display:none;}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    background:var(--limestone);
+    border-bottom:1px solid var(--line);
+    position:relative;
+    overflow:hidden;
+  }
+  .hero .wrap{
+    display:grid;
+    grid-template-columns:1.1fr 0.9fr;
+    gap:56px;
+    align-items:center;
+    padding-top:64px;
+    padding-bottom:64px;
+  }
+  .eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12.5px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--clay-deep);
+    font-weight:500;
+    margin-bottom:18px;
+    display:flex;
+    align-items:center;
+    gap:9px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:7px;height:7px;
+    background:var(--clay);
+    border-radius:1px;
+    display:inline-block;
+  }
+  .hero h1{
+    font-size:clamp(34px,4.4vw,52px);
+    line-height:1.06;
+    margin-bottom:20px;
+  }
+  .hero h1 em{
+    font-style:normal;
+    color:var(--clay-deep);
+  }
+  .hero p.lede{
+    font-size:18px;
+    color:var(--slate-soft);
+    max-width:480px;
+    margin-bottom:30px;
+  }
+  .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:26px;}
+  .btn-primary{
+    background:var(--clay);
+    color:#fff;
+    padding:15px 26px;
+    border-radius:3px;
+    font-weight:600;
+    font-size:15.5px;
+    border:none;
+    cursor:pointer;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+  }
+  .btn-primary:hover{background:var(--clay-deep);}
+  .btn-secondary{
+    background:transparent;
+    border:1.5px solid var(--slate);
+    color:var(--slate);
+    padding:14px 24px;
+    border-radius:3px;
+    font-weight:600;
+    font-size:15.5px;
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+  }
+  .btn-secondary:hover{background:var(--slate);color:#fff;}
+  .hero-trust{
+    display:flex;
+    gap:22px;
+    flex-wrap:wrap;
+    font-size:13.5px;
+    color:var(--slate-soft);
+    font-weight:500;
+  }
+  .hero-trust span{display:flex;align-items:center;gap:6px;}
+  .hero-trust svg{width:15px;height:15px;flex:none;color:var(--good);}
+
+  /* Diagnostic card / signature element */
+  .diagnostic-card{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:4px;
+    overflow:hidden;
+  }
+  .diagnostic-head{
+    background:var(--slate);
+    color:var(--limestone);
+    padding:18px 22px;
+  }
+  .diagnostic-head .mono{font-size:12px;letter-spacing:.06em;text-transform:uppercase;opacity:.7;}
+  .diagnostic-head h3{color:#fff;font-size:18px;margin-top:5px;}
+  .diagnostic-list{padding:6px 0;}
+  .diag-row{
+    display:flex;
+    align-items:flex-start;
+    gap:13px;
+    padding:15px 22px;
+    border-bottom:1px solid var(--limestone-dark);
+    font-size:14.5px;
+  }
+  .diag-row:last-child{border-bottom:none;}
+  .diag-num{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12px;
+    color:var(--clay-deep);
+    background:var(--limestone);
+    width:22px;height:22px;
+    border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    flex:none;
+    margin-top:1px;
+    font-weight:600;
+  }
+  .diag-row strong{display:block;color:var(--slate);font-weight:600;margin-bottom:2px;}
+  .diag-row span.sub{color:var(--slate-soft);font-size:13.5px;}
+  .diagnostic-foot{
+    background:var(--limestone);
+    padding:16px 22px;
+    font-size:13.5px;
+    color:var(--slate-soft);
+    border-top:1px solid var(--line);
+  }
+  .diagnostic-foot strong{color:var(--clay-deep);}
+
+  /* ---------- SECTION GENERIC ---------- */
+  section{padding:84px 0;}
+  .section-head{max-width:640px;margin-bottom:48px;}
+  .section-eyebrow{
+    font-family:'JetBrains Mono',monospace;
+    font-size:12.5px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--clay-deep);
+    font-weight:500;
+    margin-bottom:14px;
+  }
+  .section-head h2{font-size:clamp(28px,3vw,38px);margin-bottom:14px;line-height:1.12;}
+  .section-head p{color:var(--slate-soft);font-size:16.5px;}
+
+  /* ---------- WHY / TRUST GRID ---------- */
+  .why{background:var(--white);}
+  .why-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1px;
+    background:var(--line);
+    border:1px solid var(--line);
+  }
+  .why-cell{
+    background:var(--white);
+    padding:34px 30px;
+  }
+  .why-cell .mono{
+    font-size:12px;
+    color:var(--clay-deep);
+    margin-bottom:14px;
+    display:block;
+  }
+  .why-cell h3{font-size:19px;margin-bottom:10px;}
+  .why-cell p{font-size:14.5px;color:var(--slate-soft);}
+
+  /* ---------- HOW IT WORKS / PROCESS ---------- */
+  .process{background:var(--limestone);border-top:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .process-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:28px;
+  }
+  .process-step{position:relative;}
+  .process-step .step-num{
+    font-family:'Fraunces',serif;
+    font-size:38px;
+    color:var(--clay);
+    opacity:.55;
+    margin-bottom:10px;
+    line-height:1;
+  }
+  .process-step h3{font-size:17px;margin-bottom:8px;}
+  .process-step p{font-size:14px;color:var(--slate-soft);}
+
+  /* ---------- SERVICES STRIP ---------- */
+  .services{background:var(--white);}
+  .services-list{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:14px;
+  }
+  .service-row{
+    border:1px solid var(--line);
+    border-radius:3px;
+    padding:20px 22px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:14px;
+  }
+  .service-row h3{font-size:16.5px;font-weight:600;font-family:'Inter',sans-serif;}
+  .service-row p{font-size:13.5px;color:var(--slate-soft);margin-top:3px;}
+  .service-row a{
+    font-size:13.5px;
+    font-weight:600;
+    color:var(--clay-deep);
+    white-space:nowrap;
+    border-bottom:1px solid var(--clay-deep);
+    padding-bottom:1px;
+  }
+
+  /* ---------- AREAS SERVED ---------- */
+  .areas{background:var(--slate);color:var(--limestone);}
+  .areas .section-head h2{color:#fff;}
+  .areas .section-head p{color:#C7CAD0;}
+  .areas .section-eyebrow{color:#D89368;}
+  .area-tags{display:flex;flex-wrap:wrap;gap:10px;}
+  .area-tags span{
+    border:1px solid #565B63;
+    border-radius:3px;
+    padding:9px 16px;
+    font-size:14px;
+    font-weight:500;
+  }
+
+  /* ---------- FAQ ---------- */
+  .faq{background:var(--white);}
+  .faq-item{
+    border-bottom:1px solid var(--line);
+    padding:22px 0;
+  }
+  .faq-item h3{font-size:17px;font-weight:600;font-family:'Inter',sans-serif;margin-bottom:8px;}
+  .faq-item p{font-size:14.5px;color:var(--slate-soft);max-width:740px;}
+
+  /* ---------- LEAD FORM ---------- */
+  .lead{
+    background:var(--limestone);
+    border-top:1px solid var(--line);
+  }
+  .lead-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:56px;
+    align-items:start;
+  }
+  .lead-copy h2{font-size:clamp(26px,3vw,34px);margin-bottom:16px;}
+  .lead-copy p{color:var(--slate-soft);font-size:16px;margin-bottom:24px;max-width:420px;}
+  .lead-points{display:flex;flex-direction:column;gap:13px;}
+  .lead-points div{display:flex;gap:10px;align-items:flex-start;font-size:14.5px;color:var(--slate-soft);}
+  .lead-points svg{width:16px;height:16px;flex:none;color:var(--good);margin-top:2px;}
+
+  form.lead-form{
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:5px;
+    padding:30px;
+  }
+  form.lead-form .form-head{margin-bottom:20px;}
+  form.lead-form .form-head .mono{font-size:11.5px;color:var(--clay-deep);letter-spacing:.06em;text-transform:uppercase;}
+  form.lead-form .form-head h3{font-size:20px;margin-top:6px;}
+  .field{margin-bottom:14px;}
+  .field label{
+    display:block;
+    font-size:13px;
+    font-weight:600;
+    margin-bottom:6px;
+    color:var(--slate);
+  }
+  .field input, .field select, .field textarea{
+    width:100%;
+    border:1px solid var(--line);
+    border-radius:3px;
+    padding:11px 13px;
+    font-family:'Inter',sans-serif;
+    font-size:15px;
+    background:var(--white);
+    color:var(--slate);
+  }
+  .field input:focus, .field select:focus, .field textarea:focus{
+    outline:2px solid var(--clay);
+    outline-offset:1px;
+  }
+  .field-row{display:grid;grid-template-columns:1fr 1fr;gap:12px;}
+  .lead-form .submit-btn{
+    width:100%;
+    background:var(--clay);
+    color:#fff;
+    border:none;
+    padding:15px;
+    border-radius:3px;
+    font-weight:700;
+    font-size:16px;
+    cursor:pointer;
+    margin-top:6px;
+  }
+  .lead-form .submit-btn:hover{background:var(--clay-deep);}
+  .form-disclaimer{font-size:12px;color:var(--slate-soft);margin-top:12px;text-align:center;}
+
+  /* ---------- FOOTER ---------- */
+  footer{background:var(--slate);color:#B6BAC1;padding:48px 0 28px;}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:36px;}
+  .footer-logo{font-family:'Fraunces',serif;color:#fff;font-size:19px;font-weight:600;margin-bottom:12px;}
+  footer p{font-size:13.5px;line-height:1.6;}
+  footer h4{color:#fff;font-size:13.5px;text-transform:uppercase;letter-spacing:.05em;margin-bottom:14px;font-weight:600;}
+  footer ul{list-style:none;display:flex;flex-direction:column;gap:9px;font-size:14px;}
+  footer ul a:hover{color:#fff;}
+  .footer-bottom{
+    border-top:1px solid #454A52;
+    padding-top:22px;
+    font-size:12.5px;
+    color:#8B8F97;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:10px;
+  }
+
+  /* ---------- STICKY MOBILE BAR ---------- */
+  .sticky-cta{display:none;}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width:880px){
+    nav{display:none;}
+    .hero .wrap{grid-template-columns:1fr;padding-top:36px;padding-bottom:40px;gap:36px;}
+    .why-grid{grid-template-columns:1fr;}
+    .process-grid{grid-template-columns:1fr 1fr;gap:24px;}
+    .services-list{grid-template-columns:1fr;}
+    .lead-grid{grid-template-columns:1fr;gap:32px;}
+    .footer-grid{grid-template-columns:1fr;gap:28px;}
+    .field-row{grid-template-columns:1fr;}
+    section{padding:56px 0;}
+    .topbar .hours{display:none;}
+    .sticky-cta{
+      display:flex;
+      position:fixed;
+      bottom:0;left:0;right:0;
+      z-index:60;
+      background:var(--slate);
+      padding:11px 16px;
+      gap:10px;
+    }
+    .sticky-cta a{
+      flex:1;
+      text-align:center;
+      padding:13px 10px;
+      border-radius:3px;
+      font-weight:700;
+      font-size:14.5px;
+    }
+    .sticky-cta .call{background:var(--clay);color:#fff;}
+    .sticky-cta .quote{background:transparent;border:1.5px solid #fff;color:#fff;}
+    body{padding-bottom:64px;}
+  }
+  @media (max-width:520px){
+    .process-grid{grid-template-columns:1fr;}
+    .hero-trust{flex-direction:column;align-items:flex-start;gap:10px;}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <a href="tel:+15125550142" class="phone">📞 (512) 555-0142 — Call for a free inspection</a>
+    <span class="hours">Mon–Sat, 7am–7pm · Austin & Central Texas</span>
+  </div>
+</div>
+
+<header>
+  <div class="header-inner">
+    <a href="index.html" class="logo">
+      <svg class="mark" viewBox="0 0 32 32" fill="none">
+        <path d="M4 26L16 6L28 26" stroke="#B5512B" stroke-width="2.4" stroke-linejoin="round"/>
+        <path d="M9 26L16 14L23 26" stroke="#2B2E33" stroke-width="2.4" stroke-linejoin="round"/>
+      </svg>
+      Austin Foundation Co
+    </a>
+    <nav>
+      <a href="#signs">Warning Signs</a>
+      <a href="#services">Services</a>
+      <a href="#process">Our Process</a>
+      <a href="#areas">Service Areas</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <a href="#quote" class="nav-cta">Get Free Inspection</a>
+  </div>
+</header>
+
+<section class="hero" style="padding:0;">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">Austin &amp; Central Texas Foundation Specialists</div>
+      <h1>Don't let a cracked foundation become a <em>$40,000 problem.</em></h1>
+      <p class="lede">Texas clay soil shifts more than almost anywhere in the country. Caught early, most foundation issues are a controlled repair. Caught late, they're a structural rebuild. Get a free, no-pressure inspection from a local engineer-backed crew.</p>
+      <div class="hero-ctas">
+        <a href="#quote" class="btn-primary">
+          Get My Free Inspection →
+        </a>
+        <a href="tel:+15125550142" class="btn-secondary">
+          📞 (512) 555-0142
+        </a>
+      </div>
+      <div class="hero-trust">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Licensed &amp; insured in Texas</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Lifetime transferable warranty</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Free written estimate, no obligation</span>
+      </div>
+    </div>
+
+    <div class="diagnostic-card" id="signs">
+      <div class="diagnostic-head">
+        <div class="mono">Self-check / 60 seconds</div>
+        <h3>Do you have any of these signs?</h3>
+      </div>
+      <div class="diagnostic-list">
+        <div class="diag-row">
+          <span class="diag-num">1</span>
+          <div>
+            <strong>Diagonal cracks above doors or windows</strong>
+            <span class="sub">Usually the earliest visible sign of foundation movement.</span>
+          </div>
+        </div>
+        <div class="diag-row">
+          <span class="diag-num">2</span>
+          <div>
+            <strong>Doors or windows that stick or won't latch</strong>
+            <span class="sub">The frame is racking as the slab shifts beneath it.</span>
+          </div>
+        </div>
+        <div class="diag-row">
+          <span class="diag-num">3</span>
+          <div>
+            <strong>Sloping or uneven floors</strong>
+            <span class="sub">Try the marble test — does it roll on its own?</span>
+          </div>
+        </div>
+        <div class="diag-row">
+          <span class="diag-num">4</span>
+          <div>
+            <strong>Gaps between walls and ceiling, or baseboard and floor</strong>
+            <span class="sub">A sign of separation, not just settling.</span>
+          </div>
+        </div>
+        <div class="diag-row">
+          <span class="diag-num">5</span>
+          <div>
+            <strong>Visible cracks in exterior brick or the slab itself</strong>
+            <span class="sub">Stair-step cracks in brick are a red flag, not cosmetic.</span>
+          </div>
+        </div>
+      </div>
+      <div class="diagnostic-foot">
+        <strong>2 or more checked?</strong> Worth a free inspection before it gets more expensive to fix.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-eyebrow">Why Austin homeowners call us first</div>
+      <h2>Built for Central Texas clay, not a national franchise script.</h2>
+      <p>Austin sits on expansive clay soils that swell and shrink with every wet-dry cycle. That's a different problem than the sandy or rocky soil most national foundation chains are trained on.</p>
+    </div>
+    <div class="why-grid">
+      <div class="why-cell">
+        <span class="mono">01 / LOCAL SOIL EXPERTISE</span>
+        <h3>We know Austin clay</h3>
+        <p>From Cedar Park caliche to East Austin black clay, soil composition changes block by block. Our repair plans are built around what's actually under your slab.</p>
+      </div>
+      <div class="why-cell">
+        <span class="mono">02 / ENGINEER-BACKED PLANS</span>
+        <h3>No guessing, no upsells</h3>
+        <p>Every repair plan is reviewed against structural engineering standards — not a sales rep's quota. You get a written scope before any work starts.</p>
+      </div>
+      <div class="why-cell">
+        <span class="mono">03 / TRANSFERABLE WARRANTY</span>
+        <h3>Protects your home's resale value</h3>
+        <p>Selling your house in five years? Our warranty transfers to the next owner — a real asset during inspection negotiations.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="process" id="process">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-eyebrow">How it works</div>
+      <h2>From first crack to fixed foundation, in four steps.</h2>
+    </div>
+    <div class="process-grid">
+      <div class="process-step">
+        <div class="step-num">01</div>
+        <h3>Free inspection</h3>
+        <p>A local technician measures elevation, photographs damage, and walks the perimeter — usually 45–60 minutes.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">02</div>
+        <h3>Written diagnosis</h3>
+        <p>You get a plain-English report: what's causing the movement, and whether it's cosmetic or structural.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">03</div>
+        <h3>Fixed-price quote</h3>
+        <p>A detailed scope and price, no vague ranges. Most quotes are delivered same-day or next-day.</p>
+      </div>
+      <div class="process-step">
+        <div class="step-num">04</div>
+        <h3>Repair &amp; warranty</h3>
+        <p>Most jobs complete in 1–3 days. You receive a transferable warranty on the work performed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="services" id="services">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-eyebrow">What we repair</div>
+      <h2>Foundation services across Austin.</h2>
+      <p>Every method below is selected based on your soil report and damage pattern — not a one-size-fits-all default.</p>
+    </div>
+    <div class="services-list">
+      <div class="service-row">
+        <div>
+          <h3>Pier &amp; beam repair</h3>
+          <p>Leveling and stabilizing homes on pier &amp; beam foundations.</p>
+        </div>
+        <a href="/pier-and-beam-foundation-repair-austin.html">Learn more →</a>
+      </div>
+      <div class="service-row">
+        <div>
+          <h3>Slab foundation repair</h3>
+          <p>Push pier and helical pier systems for concrete slab homes.</p>
+        </div>
+        <a href="/slab-foundation-repair-austin.html">Learn more →</a>
+      </div>
+      <div class="service-row">
+        <div>
+          <h3>Foundation crack repair</h3>
+          <p>Epoxy and polyurethane injection for non-structural cracks.</p>
+        </div>
+        <a href="/foundation-crack-repair-austin.html">Learn more →</a>
+      </div>
+      <div class="service-row">
+        <div>
+          <h3>Drainage &amp; French drains</h3>
+          <p>Redirecting water away from your foundation to prevent recurrence.</p>
+        </div>
+        <a href="/foundation-drainage-austin.html">Learn more →</a>
+      </div>
+      <div class="service-row">
+        <div>
+          <h3>Concrete leveling</h3>
+          <p>Driveway, patio, and garage slab leveling without full replacement.</p>
+        </div>
+        <a href="/concrete-leveling-austin.html">Learn more →</a>
+      </div>
+      <div class="service-row">
+        <div>
+          <h3>Pre-sale foundation inspection</h3>
+          <p>Pre-listing inspection reports for sellers and real estate agents.</p>
+        </div>
+        <a href="/pre-sale-foundation-inspection-austin.html">Learn more →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="areas" id="areas">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-eyebrow">Where we work</div>
+      <h2>Serving Austin and the surrounding hill country.</h2>
+      <p>If you're not sure whether you're in our service area, call us — we likely still cover it.</p>
+    </div>
+    <div class="area-tags">
+      <span>Austin</span><span>Round Rock</span><span>Cedar Park</span><span>Georgetown</span>
+      <span>Pflugerville</span><span>Leander</span><span>Hutto</span><span>Buda</span>
+      <span>Kyle</span><span>Dripping Springs</span><span>Lakeway</span><span>Bee Cave</span>
+      <span>West Lake Hills</span><span>Manor</span><span>Del Valle</span>
+    </div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="section-eyebrow">Common questions</div>
+      <h2>What Austin homeowners ask us first.</h2>
+    </div>
+    <div class="faq-item">
+      <h3>How much does foundation repair cost in Austin?</h3>
+      <p>Most repairs range from $2,500 for minor crack injection to $15,000+ for full perimeter pier systems on larger homes. The only way to get an accurate number is a free inspection — soil movement, foundation type, and damage extent all affect price.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is foundation movement normal in Austin?</h3>
+      <p>Some seasonal movement is normal given our expansive clay soil. The concern is movement that doesn't reverse, or cracks that keep widening. That's the difference our inspection is built to identify.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Will my homeowners insurance cover this?</h3>
+      <p>Typically not, unless the damage stems from a covered peril like a plumbing leak. Most foundation settling from soil movement is considered a maintenance issue, not a covered claim. We can help you understand which applies to your situation.</p>
+    </div>
+    <div class="faq-item">
+      <h3>How long does a typical repair take?</h3>
+      <p>Most residential pier installations take 1–3 days. Crack injection repairs are often same-day. We'll give you a specific timeline in your written quote.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do you offer financing?</h3>
+      <p>Yes — we offer financing options for qualified homeowners. We'll walk through the available plans during your free inspection.</p>
+    </div>
+  </div>
+</section>
+
+<section class="lead" id="quote">
+  <div class="wrap">
+    <div class="lead-grid">
+      <div class="lead-copy">
+        <h2>Get a free foundation inspection.</h2>
+        <p>No pressure, no obligation. A local technician will assess your home and give you a written diagnosis — usually within 48 hours of your request.</p>
+        <div class="lead-points">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Free, no-obligation inspection</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Written diagnosis and fixed-price quote</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> We respond within one business day</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 13l4 4L19 7"/></svg> Your information is never sold to third parties</div>
+        </div>
+      </div>
+
+      <form class="lead-form" id="leadForm">
+        <div class="form-head">
+          <span class="mono">Free Inspection Request</span>
+          <h3>Tell us about your home</h3>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="fname">First name</label>
+            <input type="text" id="fname" name="fname" required>
+          </div>
+          <div class="field">
+            <label for="lname">Last name</label>
+            <input type="text" id="lname" name="lname" required>
+          </div>
+        </div>
+
+        <div class="field-row">
+          <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="field">
+            <label for="zip">ZIP code</label>
+            <input type="text" id="zip" name="zip" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="issue">What are you noticing?</label>
+          <select id="issue" name="issue" required>
+            <option value="">Select one</option>
+            <option>Cracks in walls or ceiling</option>
+            <option>Doors or windows sticking</option>
+            <option>Sloping or uneven floors</option>
+            <option>Visible cracks in foundation/slab</option>
+            <option>Not sure / just want it checked</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="notes">Anything else? (optional)</label>
+          <textarea id="notes" name="notes" rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Request My Free Inspection</button>
+        <p class="form-disclaimer">By submitting, you agree to be contacted by phone, text, or email about your inspection request. No spam, no shared lists.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">Austin Foundation Co</div>
+        <p>Locally operated foundation repair and inspection services for Austin and Central Texas homeowners. Licensed, insured, and built around how Texas clay soil actually moves.</p>
+      </div>
+      <div>
+        <h4>Services</h4>
+        <ul>
+          <li><a href="/pier-and-beam-foundation-repair-austin.html">Pier &amp; beam repair</a></li>
+          <li><a href="/slab-foundation-repair-austin.html">Slab foundation repair</a></li>
+          <li><a href="/foundation-crack-repair-austin.html">Crack repair</a></li>
+          <li><a href="/foundation-drainage-austin.html">Drainage solutions</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Company</h4>
+        <ul>
+          <li><a href="#process">Our process</a></li>
+          <li><a href="#areas">Service areas</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="tel:+15125550142">(512) 555-0142</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Austin Foundation Co. All rights reserved.</span>
+      <span>Licensed General Contractor · Texas</span>
+    </div>
+  </div>
+</footer>
+
+<div class="sticky-cta">
+  <a href="tel:+15125550142" class="call">📞 Call Now</a>
+  <a href="#quote" class="quote">Get Free Quote</a>
+</div>
+
+<script>
+  document.getElementById('leadForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    alert('Form submitted! (Demo only — connect this to your form handler, e.g. Formspree, Web3Forms, or your CRM webhook, before going live.)');
+  });
+</script>
+
+</body>
+</html>
