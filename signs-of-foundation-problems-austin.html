@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pier &amp; Beam Foundation Repair in Austin, TX | Austin Foundation Co</title>
-<meta name="description" content="Pier and beam foundation repair in Austin: how it differs from slab repair, common problems with older homes, the repair process, and what it costs. Free inspection.">
+<title>10 Signs of Foundation Problems in Austin Homes | Austin Foundation Co</title>
+<meta name="description" content="The full list of foundation problem warning signs for Austin homeowners — from early hairline cracks to advanced structural movement — and what each one actually means.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400..600&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -55,12 +55,41 @@
 
   article{padding:52px 0;}
   article .article-wrap > p{font-size:16.5px;color:var(--slate-soft);margin-bottom:20px;}
-  article h2{font-size:26px;margin-top:42px;margin-bottom:16px;}
-  article h3{font-size:19px;margin-top:28px;margin-bottom:12px;font-family:'Inter',sans-serif;font-weight:700;}
+  article h2{font-size:23px;margin-top:0;margin-bottom:10px;}
   article p{font-size:16.5px;color:var(--slate-soft);margin-bottom:18px;}
-  article ul, article ol{margin:0 0 20px 0;padding-left:22px;color:var(--slate-soft);font-size:16.5px;}
-  article li{margin-bottom:9px;}
   article strong{color:var(--slate);font-weight:600;}
+
+  .sign-item{
+    display:flex;
+    gap:20px;
+    padding:28px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .sign-item:first-of-type{padding-top:0;}
+  .sign-num{
+    font-family:'Fraunces',serif;
+    font-size:32px;
+    color:var(--clay);
+    opacity:.5;
+    flex:none;
+    width:50px;
+    line-height:1;
+  }
+  .sign-body{flex:1;}
+  .severity{
+    display:inline-block;
+    font-family:'JetBrains Mono',monospace;
+    font-size:10.5px;
+    letter-spacing:.05em;
+    text-transform:uppercase;
+    padding:3px 10px;
+    border-radius:3px;
+    margin-bottom:10px;
+    font-weight:600;
+  }
+  .severity.early{background:var(--limestone);color:var(--clay-deep);}
+  .severity.moderate{background:#F3E0C8;color:#8C5A0F;}
+  .severity.urgent{background:#FBEFEA;color:#A33;}
 
   .callout{
     background:var(--limestone);
@@ -71,29 +100,6 @@
   }
   .callout .mono{font-size:11.5px;color:var(--clay-deep);letter-spacing:.06em;text-transform:uppercase;margin-bottom:8px;display:block;}
   .callout p{margin-bottom:0;color:var(--slate-soft);font-size:15px;}
-
-  .compare-grid{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:16px;
-    margin:24px 0;
-  }
-  .compare-card{
-    border:1px solid var(--line);
-    border-radius:4px;
-    padding:22px;
-  }
-  .compare-card.featured{border-top:3px solid var(--clay);}
-  .compare-card .mono{font-size:11px;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;display:block;color:var(--clay-deep);}
-  .compare-card h3{font-size:16.5px;margin-top:0;margin-bottom:10px;}
-  .compare-card ul{font-size:14.5px;margin-bottom:0;padding-left:18px;}
-  .compare-card li{margin-bottom:6px;}
-
-  .cost-table{width:100%;border-collapse:collapse;margin:24px 0;font-size:15px;}
-  .cost-table th{text-align:left;background:var(--slate);color:#fff;padding:12px 16px;font-weight:600;font-size:13.5px;}
-  .cost-table td{padding:12px 16px;border-bottom:1px solid var(--line);color:var(--slate-soft);}
-  .cost-table tr:last-child td{border-bottom:none;}
-  .cost-table td:first-child{color:var(--slate);font-weight:500;}
 
   .inline-cta{
     background:var(--slate);
@@ -126,8 +132,9 @@
   @media (max-width:880px){
     nav{display:none;}
     .related-grid{grid-template-columns:1fr;}
-    .compare-grid{grid-template-columns:1fr;}
     article{padding:36px 0;}
+    .sign-item{gap:14px;}
+    .sign-num{font-size:26px;width:36px;}
     .sticky-cta{
       display:flex;position:fixed;bottom:0;left:0;right:0;z-index:60;
       background:var(--slate);padding:11px 16px;gap:10px;
@@ -169,10 +176,10 @@
 
 <section class="article-hero">
   <div class="article-wrap">
-    <div class="breadcrumb"><a href="index.html">Home</a> / <a href="index.html#services">Services</a> / Pier &amp; Beam Foundation Repair</div>
-    <div class="eyebrow">Pier &amp; Beam Foundation Repair · Austin, TX</div>
-    <h1>Pier &amp; Beam Foundation Repair in Austin: What Older Homes Need to Know</h1>
-    <p class="dek">If your home has a crawl space instead of a slab, your foundation works — and fails — differently. Here's how pier and beam repair works, the problems specific to older Austin homes, and what it costs.</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> / Signs of Foundation Problems</div>
+    <div class="eyebrow">Warning Signs · Austin, TX</div>
+    <h1>10 Signs of Foundation Problems in Austin Homes</h1>
+    <p class="dek">From the earliest hairline crack to the clearest structural red flag — what each sign actually means, and how urgently it's worth acting on.</p>
     <div class="meta-row">
       <span>Updated for 2026</span>
       <span>6 min read</span>
@@ -184,79 +191,111 @@
 <article>
   <div class="article-wrap">
 
-    <p>Pier and beam foundations are common in Austin homes built before the 1960s, especially in central neighborhoods like Hyde Park, Travis Heights, and Old West Austin. Instead of a concrete slab sitting directly on the ground, the house rests on a system of concrete or wood piers, with wooden beams and joists spanning between them — leaving a crawl space underneath.</p>
+    <p>Foundation problems rarely announce themselves all at once. They show up gradually, as a handful of small, easy-to-explain-away symptoms — until enough of them stack up that it's obviously not "just an old house." Here's the full list, roughly in the order they tend to appear, with an honest read on how urgent each one is.</p>
 
-    <p>That crawl space is both the advantage and the vulnerability. It gives you access to plumbing and wiring without tearing up a slab, but it also means moisture, wood rot, and pier settlement can cause problems a slab home simply doesn't face.</p>
-
-    <h2>How pier &amp; beam differs from slab foundations</h2>
-    <div class="compare-grid">
-      <div class="compare-card featured">
-        <span class="mono">Pier &amp; Beam</span>
-        <h3>Crawl space construction</h3>
-        <ul>
-          <li>Raised off the ground on piers</li>
-          <li>Accessible crawl space underneath</li>
-          <li>Vulnerable to wood rot &amp; moisture</li>
-          <li>Common in pre-1960s Austin homes</li>
-        </ul>
-      </div>
-      <div class="compare-card">
-        <span class="mono">Slab</span>
-        <h3>Concrete-on-grade</h3>
-        <ul>
-          <li>Sits directly on the soil</li>
-          <li>No crawl space access</li>
-          <li>Vulnerable to soil movement</li>
-          <li>Common in post-1970s Austin homes</li>
-        </ul>
+    <div class="sign-item">
+      <div class="sign-num">01</div>
+      <div class="sign-body">
+        <span class="severity early">Early sign</span>
+        <h2>Diagonal cracks above doors and windows</h2>
+        <p>Usually the very first visible sign. These radiate at roughly 45 degrees from a corner of the frame, as the structure settles unevenly above it.</p>
       </div>
     </div>
 
-    <h2>Common pier &amp; beam problems in Austin</h2>
-    <h3>Wood rot and moisture damage</h3>
-    <p>Central Texas humidity, combined with poor crawl space ventilation, creates ideal conditions for wood rot in floor joists and beams. This is the single most common reason pier and beam homes need repair — and it's frequently invisible until someone is underneath the house looking for it.</p>
+    <div class="sign-item">
+      <div class="sign-num">02</div>
+      <div class="sign-body">
+        <span class="severity early">Early sign</span>
+        <h2>Hairline cracks in drywall</h2>
+        <p>Thin, stable cracks that aren't growing are usually cosmetic — but worth a mental note, since they're often the first thing you'll notice before anything else on this list shows up.</p>
+      </div>
+    </div>
 
-    <h3>Settled or shifted piers</h3>
-    <p>Older concrete or wood piers can settle unevenly as the soil beneath them moves, especially if the original piers weren't set deep enough to reach stable soil — a common shortcut in homes built before modern foundation standards.</p>
+    <div class="sign-item">
+      <div class="sign-num">03</div>
+      <div class="sign-body">
+        <span class="severity moderate">Moderate</span>
+        <h2>Doors or windows that stick or won't latch</h2>
+        <p>The frame is racking out of square as the foundation shifts beneath it — even a small amount of movement is enough to throw off a door's alignment.</p>
+      </div>
+    </div>
 
-    <h3>Sagging or bouncy floors</h3>
-    <p>If a floor feels noticeably springy when you walk across it, that's often a sign of a weakened or rotted joist rather than a soil issue — a different repair than what a slab home with the same complaint would need.</p>
+    <div class="sign-item">
+      <div class="sign-num">04</div>
+      <div class="sign-body">
+        <span class="severity moderate">Moderate</span>
+        <h2>Gaps between walls and ceiling, or baseboard and floor</h2>
+        <p>This indicates separation, not just settling — the wall or baseboard is pulling away from a surface it used to sit flush against.</p>
+      </div>
+    </div>
+
+    <div class="sign-item">
+      <div class="sign-num">05</div>
+      <div class="sign-body">
+        <span class="severity moderate">Moderate</span>
+        <h2>Sloping or uneven floors</h2>
+        <p>Try the marble test: set a marble or small ball on the floor. If it rolls on its own toward one side of a room, that's measurable foundation movement, not just an old, quirky house.</p>
+      </div>
+    </div>
+
+    <div class="sign-item">
+      <div class="sign-num">06</div>
+      <div class="sign-body">
+        <span class="severity moderate">Moderate</span>
+        <h2>Cabinets or countertops pulling away from the wall</h2>
+        <p>Kitchen cabinets are usually installed dead-level and flush. A visible gap appearing months after installation is a strong, often-overlooked signal.</p>
+      </div>
+    </div>
+
+    <div class="sign-item">
+      <div class="sign-num">07</div>
+      <div class="sign-body">
+        <span class="severity urgent">Higher concern</span>
+        <h2>Stair-step cracks in exterior brick or mortar</h2>
+        <p>These follow the mortar joints in a zig-zag pattern up the brick face. Unlike a drywall crack, this is happening in a rigid, load-bearing material — a stronger indicator than interior cracks alone.</p>
+      </div>
+    </div>
+
+    <div class="sign-item">
+      <div class="sign-num">08</div>
+      <div class="sign-body">
+        <span class="severity urgent">Higher concern</span>
+        <h2>Visible cracks in the foundation or slab itself</h2>
+        <p>Especially horizontal cracks, or any crack wide enough to fit a coin into — this is the foundation itself showing the damage, not a downstream symptom of it.</p>
+      </div>
+    </div>
+
+    <div class="sign-item">
+      <div class="sign-num">09</div>
+      <div class="sign-body">
+        <span class="severity urgent">Higher concern</span>
+        <h2>Bowing or leaning walls</h2>
+        <p>A wall that's visibly no longer plumb (vertical) indicates significant lateral pressure or settlement — this is well past the "monitor it" stage.</p>
+      </div>
+    </div>
+
+    <div class="sign-item">
+      <div class="sign-num">10</div>
+      <div class="sign-body">
+        <span class="severity urgent">Higher concern</span>
+        <h2>Sagging or visibly uneven roofline</h2>
+        <p>If foundation movement is severe enough to show up at the roofline when viewed from the street, the problem has been progressing for a while — this warrants prompt attention.</p>
+      </div>
+    </div>
 
     <div class="callout">
-      <span class="mono">Why this matters for diagnosis</span>
-      <p>Pier and beam problems are frequently a wood issue, not a soil issue — which means the fix is often joist and beam replacement, not just adding piers. An inspection that goes underneath the house, not just around the exterior, is essential to get this right.</p>
+      <span class="mono">How many signs is too many?</span>
+      <p>One or two early signs alone usually isn't an emergency. Three or more — especially mixing early and moderate signs — is when a free inspection stops being optional and starts being the cheapest next step available to you.</p>
     </div>
 
-    <h2>How pier &amp; beam repair works</h2>
-    <ol>
-      <li><strong>Crawl space inspection</strong> — a technician physically goes underneath the house to assess pier condition, wood moisture levels, and joist integrity.</li>
-      <li><strong>Pier replacement or shimming</strong> — settled piers are releveled, replaced with concrete piers, or shimmed depending on the extent of movement.</li>
-      <li><strong>Wood sistering or replacement</strong> — rotted joists and beams are reinforced ("sistered" with new lumber alongside the old) or fully replaced if rot is extensive.</li>
-      <li><strong>Moisture correction</strong> — vapor barriers and improved ventilation are often added to prevent the same wood rot from recurring.</li>
-    </ol>
-
-    <h2>What pier &amp; beam repair costs in Austin</h2>
-    <table class="cost-table">
-      <tr><th>Repair scope</th><th>Typical cost range</th></tr>
-      <tr><td>Pier releveling (4–6 piers)</td><td>$1,800 – $4,500</td></tr>
-      <tr><td>Pier replacement (concrete piers)</td><td>$3,500 – $9,000</td></tr>
-      <tr><td>Joist sistering (per joist)</td><td>$150 – $400</td></tr>
-      <tr><td>Full beam replacement (per section)</td><td>$800 – $2,200</td></tr>
-      <tr><td>Vapor barrier installation</td><td>$1,200 – $3,000</td></tr>
-    </table>
-    <p>Most pier and beam jobs in older Austin homes combine two or three of the above — for example, releveling several piers and sistering the joists they were supporting. A written quote after inspection will reflect your home's specific combination.</p>
-
     <div class="inline-cta">
-      <h3>Have an older Austin home with a crawl space?</h3>
-      <p>Get a free inspection — including underneath the house, not just a walk-around.</p>
+      <h3>Noticing two or more of these?</h3>
+      <p>Get a free inspection and a written diagnosis — no pressure, no obligation.</p>
       <div class="inline-cta-buttons">
         <a href="index.html#quote" class="btn-primary">Get My Free Inspection →</a>
         <a href="tel:+15122982912" class="btn-secondary-dark">📞 (512) 298-2912</a>
       </div>
     </div>
-
-    <h2>How long does pier &amp; beam repair take?</h2>
-    <p>Pier releveling alone is often completed in 1–2 days. Jobs that include significant joist or beam replacement can take 3–5 days depending on the extent of wood damage found once the crawl space is opened up.</p>
 
   </div>
 </section>
@@ -273,9 +312,9 @@
         <h4>Foundation Crack Repair in Austin</h4>
         <p>How to tell a cosmetic crack from a structural one.</p>
       </a>
-      <a href="signs-of-foundation-problems-austin.html" class="related-card">
-        <h4>Signs of Foundation Problems</h4>
-        <p>The full list of warning signs for any foundation type.</p>
+      <a href="foundation-repair-cost-austin.html" class="related-card">
+        <h4>Foundation Repair Cost Guide</h4>
+        <p>Real price ranges by repair type for Austin homes.</p>
       </a>
     </div>
   </div>
